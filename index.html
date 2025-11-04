@@ -140,14 +140,24 @@
         </ul>
 
         <h2>How We Store Your Information</h2>
-        <p>Your journal data is stored securely using <strong>Google Cloud Firestore</strong>, a cloud database service. This means:</p>
+        <p>Your journal data is stored using a dual storage approach for optimal performance and reliability:</p>
+        
+        <h3>Local Storage</h3>
+        <ul>
+            <li>Your journal entries are stored directly on your device for quick access and offline functionality</li>
+            <li>Local data is stored in the app's secure storage area on your device</li>
+            <li>This allows you to access and create entries even without an internet connection</li>
+        </ul>
+        
+        <h3>Cloud Storage</h3>
+        <p>Your journal data is also stored securely using <strong>Google Cloud Firestore</strong>, a cloud database service. This means:</p>
         <ul>
             <li>Your data is <strong>encrypted during transmission</strong> using industry-standard security protocols</li>
             <li>Your data is <strong>encrypted when stored</strong> on Google's secure servers</li>
             <li>Your data is accessible from any device when you sign in with your account</li>
             <li>Firebase security rules ensure that only you can access your own journal entries</li>
+            <li>Data automatically syncs between your local device and the cloud when connected to the internet</li>
         </ul>
-        <p>Local copies of some data may be cached on your device for faster loading and offline access.</p>
 
         <h2>How We Use Your Information</h2>
         <p>We use your information to:</p>
@@ -212,9 +222,9 @@
 
         <h3>Delete Your Data</h3>
         <ul>
-            <li><strong>Individual entries:</strong> Delete any journal entry through the app</li>
-            <li><strong>All entries:</strong> Use the "Clear All Logs" feature in Settings</li>
-            <li><strong>Account deletion:</strong> Contact us at kavenwong.xh@gmail.com to request complete account deletion</li>
+            <li><strong>Individual entries:</strong> Delete any journal entry through the app (removes from both local device and cloud)</li>
+            <li><strong>All entries:</strong> Use the "Clear All Logs" feature in Settings (removes from both local device and cloud)</li>
+            <li><strong>Account deletion:</strong> Contact us at kavenwong.xh@gmail.com to request complete account deletion from all systems</li>
         </ul>
 
         <h3>Export Your Data</h3>
@@ -228,10 +238,11 @@
 
         <h2>Data Retention</h2>
         <ul>
-            <li><strong>Active accounts:</strong> We retain your data as long as your account is active</li>
-            <li><strong>Deleted data:</strong> When you delete entries or clear your data, it is removed from our active systems</li>
+            <li><strong>Active accounts:</strong> We retain your data as long as your account is active, both locally on your device and in the cloud</li>
+            <li><strong>Deleted data:</strong> When you delete entries or clear your data, it is removed from both local storage on your device and our cloud systems</li>
+            <li><strong>Local data:</strong> If you uninstall the app, local data on your device is removed, but your cloud data remains accessible if you reinstall and sign in</li>
             <li><strong>Inactive accounts:</strong> Accounts that remain inactive for an extended period may be subject to deletion</li>
-            <li><strong>Account closure:</strong> If you request account deletion, we will remove your data within a reasonable timeframe</li>
+            <li><strong>Account closure:</strong> If you request account deletion, we will remove your data from both local and cloud storage within a reasonable timeframe</li>
         </ul>
 
         <h2>Third-Party Services</h2>
